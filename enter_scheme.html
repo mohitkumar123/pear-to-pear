@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>New Scheme</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/enterSchemeForm.css" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<script src="../jQuery_v3_1_0.js"></script>
+</head>
+<body>
+<header>
+	<ul class="main-nav">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="bhamashah.rajasthan.gov.in">Bhamashah</a></li>
+		<!-- <li><a href="enter_scheme.html">Enter new scheme</a></li> -->
+	</ul>
+</header>
+<div class="img-container"></div>
+<div class="form-container">
+	<form method="POST" action="save_json.php">
+
+	<label for="s_id">Enter Scheme ID: </label>
+		<input type="text" id="s_id" name="s_id"/>
+
+
+
+		<label for="s_name">Enter Scheme Name: </label>
+		<input type="text" id="s_name" name="s_name"/>
+
+
+
+		<label for="s_desc">Enter Scheme Description: </label>
+		<input type="text" id="s_desc" name="s_desc"/>
+
+
+	<fieldset>
+		<legend>Enter Eligibility Criteria:</legend>
+
+				<label for="s_ecmin">Enter min age: </label>
+				<input type="text" id="s_ecmin" name="s_ecmin"/>
+
+
+
+				<label for="s_ecmax">Enter max age: </label>
+				<input type="text" id="s_ecmax" name="s_ecmax"/>
+
+	</fieldset>
+
+
+		<label for="s_date">launching Date(9/27/2018 4:27): </label>
+		<input type="text" id="s_date" name="s_date"/>
+
+		<input type="submit" value="Create New Scheme">
+	</form>
+</div>
+
+<script>
+	$(document).ready(function(){
+		$('input[type=text]').focusin(function(){
+			var id = $(this).attr('id');
+			$('label[for='+id+']').addClass('changeLabel');
+			$('input[type=text]').focusout(function(){
+				var text= $(this).val();
+				if(text == '')
+					$('label[for='+id+']').removeClass('changeLabel');
+
+			});
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+[{
+	"scheme_id":"F120",
+	"scheme_name":"Beti Padhao Yojna",
+	"desc": "This scheme focuses on girl's education . To grab this opportunity parents have to submit some small fix amount per month under this scheme  and girl's fees will be paid by the bank according to the following age limit.",
+	"Eligibility_Criteria":{"min_limit":5,"max_limit":18},
+	"launched_on":"9/26/2018 3:27"
+	},
+	{
+	"scheme_id":"F121",
+	"scheme_name":"Kanya Vivah Yojna",
+	"desc": "Government will provide loan for daughter's marriage with following  criteria",
+	"Eligibility_Criteria":{"min_limit":18,"max_limit":30},
+	"launched_on":"9/27/2018 4:27"
+	},
+	{
+	"scheme_id":"S123",
+	"scheme_name":"Senior Citizen Scheme",
+	"desc": "Goverment will provide pension to the senior citizen who lie under the following criteria",
+	"Eligibility_Criteria":{"min_limit":55,"max_limit":90},
+	"launched_on":"8/27/2018 3:27"
+	}
+]

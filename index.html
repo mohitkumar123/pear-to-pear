@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../jQuery_v3_1_0.js"></script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<header>
+	<ul class="main-nav">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="bhamashah.rajasthan.gov.in">Bhamashah</a></li>
+		<li><a href="enter_scheme.php">Enter new scheme</a></li>
+		<li><a href="enter_user.php">Enter new user</a></li>
+	</ul>
+</header>
+
+<div class="button-pallate">
+<button onclick="getHofAndFamilyDetails('https://apitest.sewadwaar.rajasthan.gov.in/app/live/Service/hofAndMember/ForApp/WDYYYGG?client_id=ad7288a4-7764-436d-a727-783a977f1fe1')" >Get Hof and Family Details</button><br/>
+<button onclick="getAccountDetails('https://apitest.sewadwaar.rajasthan.gov.in/app/live/Service/getAccountDetails/683601075581?client_id=ad7288a4-7764-436d-a727-783a977f1fe1')">Get Account Details</button><br/>
+<button onclick="getBhmshvrfyBCAccnt('https://apitest.sewadwaar.rajasthan.gov.in/app/live/Service/verify/BCAccount/3390379679?client_id=ad7288a4-7764-436d-a727-783a977f1fe1')">Bhamashah verify BC Account UA</button>
+</div>
+
+<div class="right-image-container">
+	<img src="images/cm-rajasthan.png" alt="CM Rajasthan Image"/>
+</div>
+<div class="main-container">
+<div id="tableContainer">
+<table  id="hofDetails">
+<caption id="hofTitle"></caption>
+	<tr>
+	<th>KEY</th>
+	<th>VALUE</th>
+	</tr>
+</table>
+<div id="familyDetailsContainer"></div>
+</div>
+<div id="accountTableContainer"></div>
+<div id="bhmAccountVryContainer"></div>
+</div>
+<div class="service-scheme-container">
+	<!-- <button onclick="getServiceScheme('localhost:8000/ajax/service_scheme.json')">Get Service Scheme</button> -->
+</div>
+</body>
+
+<script src="main.js"></script>
+
+</html>
